@@ -110,6 +110,12 @@ PHP              Sass              LevelDB         Git
 Javascript       Phoenix
 `
         break
+      case 'projects':
+        output = `
+elixium    seven_deadly_sins    zephyre    devrant_gem    essence
+pico    alchemy_vm
+`
+        break
       default:
         output = `Command '${command}' not recognized.`
     }
@@ -127,11 +133,12 @@ Javascript       Phoenix
     this.write(`
 Welcome to my website. Type one of the following commands to explore:
 
-COMMAND    DESCRIPTION
+COMMAND         DESCRIPTION
 
-about      outputs a short blurb about me
-projects   projects that I have worked on
-skills     lists languages and skills that I have learned
+about           outputs a short blurb about me
+projects        projects that I have worked on
+project <name>  shows details about a specific project
+skills          lists languages and skills that I have learned
     `)
   }
 
