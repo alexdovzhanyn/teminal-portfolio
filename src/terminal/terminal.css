@@ -1,0 +1,92 @@
+.terminal {
+  background: #24272E;
+  width: 70%;
+  height: 600px;
+  margin-left: 15%;
+  margin-top: 50px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px #0a0a0a;
+  position: absolute;
+  outline: none;
+}
+
+.terminal > .toolbar {
+  text-align: center;
+  padding: 10px;
+  background: #1F2126;
+  border-bottom: 1px solid #0a0a0a;
+  cursor: grab;
+}
+
+.terminal > .toolbar > .buttonContainer {
+  display: inline-block;
+  float: left;
+}
+
+.terminal > .toolbar > .buttonContainer > button {
+  border-radius: 100%;
+  border: 0px;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.terminal > .toolbar > .buttonContainer > button.close {
+  background: red;
+  border: 1px solid #ad0000;
+}
+
+.terminal > .toolbar > .buttonContainer > button.toggle {
+  background: #23C137;
+  border: 1px solid #1b942a;
+  margin-left: 8px;
+}
+
+.terminal > .toolbar > p {
+  margin: 0px;
+  color: #fefefe;
+  font-family: Menlo, monospace;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.terminal > .body {
+  padding: 10px;
+  text-align: left;
+  color: #9DA9B7;
+  font-family: Menlo, monospace;
+  font-weight: 600;
+  cursor: text;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  height: 560px;
+}
+
+.terminal > .body::-webkit-scrollbar {
+  background: #1F2126;
+  border-left: 1px solid #0a0a0a;
+}
+
+.terminal > .body::-webkit-scrollbar-thumb {
+  background: #3b404c;
+  width: 10px;
+}
+
+.terminal > .body > pre {
+  font-family: Menlo, monospace;
+}
+
+.terminal > .body > .prompt {
+  margin: 20px 0px 0px;
+  position: relative;
+}
+
+.terminal > .body > .prompt > .cursor {
+  width: 2px;
+  height: 16px;
+  background: #9DA9B7;
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+}
